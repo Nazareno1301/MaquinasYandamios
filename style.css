@@ -1,10 +1,12 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
-header{
-    display:flex;
+
+header {
+    display: flex;
     width: 100%;
     background-color: rgb(39, 163, 204);
     height: 5rem;
@@ -12,255 +14,324 @@ header{
     z-index: 1;
 }
 
-#logo{
+#logo {
     width: 5rem;
-    margin:3px 0 0 5px;
-  
+    margin: 3px 0 0 5px;
+
 }
-.barra_de_navegacion li a{
+
+.barra_de_navegacion li a {
     font-size: 1rem;
-    text-decoration:none;
-    color:inherit;
-}
-.navegador{
-    display:flex;
-    width:100%;
-    justify-content:flex-end;
-    align-items:center;
-    margin-right:10px;
-}
-.items{
-    display:inline-block;
-    padding:10px;
-    font-size:14px;
-    border-left:  1px solid rgb(95, 95, 95);
-}
-.items2{
-    display:inline-block;
-    padding:10px;
-    font-size:14px;
-    border-left:  1px solid rgb(95, 95, 95);
-    border-right:   1px solid rgb(95, 95, 95);
+    text-decoration: none;
+    color: inherit;
 }
 
-body{
-    background-color:white ;
-
+.navegador {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
 }
-.andamios{
+
+.items {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border-left: 1px solid rgb(95, 95, 95);
+}
+
+.items2 {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border-left: 1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(95, 95, 95);
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+.andamios {
     padding: 10%;
     display: flex;
     justify-content: center;
-  
+
 }
 
-.andamios p{
-    color:black;
+.andamios p {
+    color: black;
     width: 40%;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
-.foto-andamio{
+.foto-andamio {
     width: 30rem;
     margin-left: 15rem;
 }
 
-.texto{
- 
+.texto {
+
     margin: 50px;
     width: 40%;
     font-size: 2rem;
-   
+
 }
 
-.contenedor-de-iconos{
-    display:flex;
+.contenedor-de-iconos {
+    display: flex;
     justify-content: flex-end;
-    
+
 }
-.iconos{
+
+.iconos {
     position: fixed;
-    top:70%;
+    top: 70%;
     right: 0;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
-    align-items:center;
-    background-color:rgb(252, 250, 250);
-     width: 12rem;
-     border: 5px solid rgb(0, 255, 0);
-     border-radius: 30%;
-     padding: 1rem;
-     z-index: 3;
+    align-items: center;
+    background-color: rgb(252, 250, 250);
+    width: 12rem;
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 30%;
+    padding: 1rem;
+    z-index: 3;
 }
-.wp{
-    background-color:black;
+
+.wp {
+    background-color: black;
     width: 4rem;
     margin-left: 0.5rem;
     position: relative;
-    
+
 }
-.medidas{
+
+.medidas {
     height: 220px;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-   /*  padding-top: 5rem; */
+    /*  padding-top: 5rem; */
 }
-.foto-medidas{
+
+.foto-medidas {
     height: 100%;
 }
-.medidas p{
+
+.medidas p {
     font-size: 1.5rem;
 }
-.wrap{
+
+.wrap {
     display: flex;
     justify-content: center;
-    flex-wrap:wrap; 
+    flex-wrap: wrap;
     width: 100%;
     padding-top: 10rem;
     z-index: 2;
     padding-bottom: 10rem;
 }
 
-.tarjeta-wrap{
-  margin:10px;
-  -webkit-perspective: 800;
-  perspective: 800;
- /*  border:3px solid black; */
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+    /*  border:3px solid black; */
 }
 
-.tarjeta{
+.tarjeta {
     width: 20rem;
     height: 21rem;
     margin: 3rem 1rem;
-    background:linear-gradient(90deg,blue,rgb(39, 163, 204));
+    background: linear-gradient(90deg, blue, rgb(39, 163, 204));
     position: relative;
     transform-style: preserve-3d;
     transition: .9s ease;
-   -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
 
 }
-.adelante, .atras{
+
+.adelante,
+.atras {
     width: 100%;
     height: 100%;
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.adelante{
+
+.adelante {
     width: 100%;
 }
 
-.atras{
-    transform: rotateY(180deg);  
+.atras {
+    transform: rotateY(180deg);
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 
     text-align: center;
-    color:azure;
+    color: azure;
 }
 
-.tarjeta-wrap:hover .tarjeta{
-    transform: rotateY(180deg);  
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-size: 40px;
-    color:white;
+    color: white;
     background-color: black;
     height: 5rem;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-.tarjetas{
+
+.tarjetas {
     padding-top: 10%;
     padding-bottom: 10%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:3%;
+    gap: 3%;
 }
-.card-body{
+
+.card-body {
     text-align: center;
 }
-.accordion{
+
+.accordion {
     padding: 15%;
 }
-.imagenes-andamios{
+
+.imagenes-andamios {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-#carouselExampleAutoplaying{
+
+#carouselExampleAutoplaying {
     width: 50%;
     margin-top: 10%;
     height: 40%;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
+
 .carousel-inner div {
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 100%;
 
 }
-@media screen and (max-width:650px){
-    header{
+
+@media screen and (max-width:650px) {
+    header {
         height: auto;
+
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         position: relative;
         z-index: 1;
     }
-    .navegador{
-        display:flex;
-        width:100%;
-        justify-content:center;
-        align-items:center;
-        margin-right:10px;
-    }
-    .items{
-        display:block;
-        width: 100%;
-        border:none;
-        border-bottom: 1px solid black;
-    }
-    .items2{
-        border:none;
-    }
-    .andamios{
+
+    body {
+        position: relative;
+        margin: 0;
         padding: 0;
-        
+        ;
+    }
+
+    .navegador {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .barra_de_navegacion {
+        padding: 0%;
+    }
+    #logo{
+        margin: 0%;
+    }
+
+    .items {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    .items2 {
+        border: none;
+    }
+
+    .andamios {
+        padding: 0;
+
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
-    
-    .foto-andamio{
+
+    .foto-andamio {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .andamios p {
+        text-align: center;
+        width: 80%;
+        font-size: 1rem;
+
+    }
+
+    footer {
+        font-size: 1rem;
+        position: relative;
+    }
+
+    .iconos {
+        position: relative;
+        top: 70%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(252, 250, 250);
+        width: 12rem;
+        border: 5px solid rgb(0, 255, 0);
+        border-radius: 30%;
+        padding: 1rem;
+        z-index: 0;
+    }
+
+    .contenedor-de-iconos {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .foto-andamio {
         width: 30rem;
         margin-left: 0;
     }
-    .andamios p{
-        text-align: center;
-        width: 80%;
- 
-    }
-   
+
 }
-
-
-
-
-
